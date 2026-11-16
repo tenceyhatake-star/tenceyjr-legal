@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101214">
+  <title>TenceyJR | Sitio oficial</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101214;
+      --panel: #191d20;
+      --border: #303639;
+      --text: #f4f6f5;
+      --muted: #a4aeaa;
+      --green: #a4ff65;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 22px 7%;
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: -.5px;
+    }
+
+    .logo span { color: var(--green); }
+
+    .nav-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 100px 7% 75px;
+    }
+
+    .tag {
+      display: inline-block;
+      color: var(--green);
+      border: 1px solid #4a6540;
+      border-radius: 30px;
+      padding: 8px 13px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 24px 0 16px;
+      font-size: clamp(42px, 8vw, 78px);
+      letter-spacing: -3px;
+      line-height: 1.05;
+    }
+
+    h1 span { color: var(--green); }
+
+    .intro {
+      max-width: 570px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .button {
+      padding: 14px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .primary {
+      background: var(--green);
+      color: #111;
+    }
+
+    .secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    section { margin-top: 95px; }
+
+    h2 {
+      font-size: 25px;
+      letter-spacing: -.6px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .card a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 7%;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--green);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Tencey<span>JR</span></div>
+      <a class="nav-link"
+         href="https://discord.gg/dexsisland"
+         target="_blank" rel="noopener noreferrer">
+        Dex's Island
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="tag">BOT DE DISCORD</div>
+
+    <h1>Conoce a<br><span>TenceyJR.</span></h1>
+
+    <p class="intro">
+      TenceyJR es un bot de entretenimiento inspirado
+      en Tencey, creado para disfrutar de minijuegos
+      y eventos dentro de Discord.
+    </p>
+
+    <div class="buttons">
+      <a class="button primary"
+         href="https://discord.gg/dexsisland"
+         target="_blank" rel="noopener noreferrer">
+        Servidor oficial
+      </a>
+
+      <a class="button secondary" href="#documentos">
+        Documentación
+      </a>
+    </div>
+
+    <section>
+      <h2>Sobre el proyecto</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Minijuegos</h3>
+          <p>
+            Partidas rápidas y diferentes modalidades
+            para jugar con otros miembros del servidor.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Eventos</h3>
+          <p>
+            Actividades especiales para participar
+            junto a la comunidad.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Desarrollo</h3>
+          <p>
+            Un proyecto desarrollado por Tencey,
+            con nuevas funciones y mejoras.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="documentos">
+      <h2>Documentación legal</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Política de privacidad</h3>
+          <p>
+            Información sobre los datos utilizados
+            por TenceyJR y su funcionamiento.
+          </p>
+          <a href="privacidad.html">Leer política</a>
+        </div>
+
+        <div class="card">
+          <h3>Términos de servicio</h3>
+          <p>
+            Condiciones generales para utilizar
+            las funciones del bot.
+          </p>
+          <a href="terminos.html">Leer términos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    TenceyJR © 2026 · Desarrollado por tencey_wtf
+    <p>
+      <a href="privacidad.html">Privacidad</a> ·
+      <a href="terminos.html">Términos</a> ·
+      <a href="https://discord.gg/dexsisland">Dex's Island</a>
+    </p>
+  </footer>
+
+</body>
+</html>
